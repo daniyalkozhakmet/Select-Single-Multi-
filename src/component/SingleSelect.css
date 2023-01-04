@@ -1,0 +1,126 @@
+.container {
+  margin: 1rem;
+  border: 0.1em solid rgb(83, 83, 83);
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: auto;
+}
+.container .select-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container ul {
+  z-index: 10;
+  list-style: none;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.5em);
+}
+.show {
+  display: block !important;
+}
+.selected {
+  background-color: rgb(6, 133, 133) !important;
+}
+.over {
+  background-color: rgb(17, 169, 169) !important;
+}
+.container ul li {
+  background-color: rgb(219, 219, 219);
+  width: 100%;
+  padding: 0.5em;
+  display: block;
+  position: relative;
+  margin-bottom: 0.1rem;
+}
+.container:focus {
+  border: 0.1em solid rgb(4, 118, 128);
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 0.6em;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  background-color: rgb(203, 203, 203);
+  transition: 0.3s all;
+}
+button:focus {
+  background-color: rgb(233, 233, 233);
+  border: 1px solid rgb(6, 133, 133);
+  color: rgb(6, 133, 133);
+}
+li button{
+  position: absolute;
+  top: 5%;
+  right: 2px;
+  height: 90%;
+  padding: 0 10px;
+  background-color: rgb(6, 133, 133);
+  color: rgb(236, 236, 236);
+  font-size: 12px;
+}
+li input {
+  border: 1px solid rgb(6, 133, 133);
+  outline: none;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.stick {
+  margin: 0 0.6em;
+  border-radius: 4px;
+  width: 0.1em;
+  align-self: stretch;
+  display: block;
+  background-color: rgb(83, 83, 83);
+}
+.dropdown.down {
+  border-left: 0.6rem solid transparent;
+  border-right: 0.6rem solid transparent;
+  border-top: 0.8rem solid #555;
+  transition: 0.3s all;
+}
+.dropdown.up {
+  border-left: 0.6rem solid transparent;
+  border-right: 0.6rem solid transparent;
+  border-bottom: 0.8rem solid #555;
+  transition: 0.3s all;
+}
+span.multi {
+  border: 0.1em solid rgb(6, 133, 133);
+  padding: 0.5em;
+  border-radius: 3px;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.badge {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(212, 40, 40);
+  cursor: pointer;
+}
